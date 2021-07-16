@@ -6,6 +6,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="js/biblioteca-jquery.js"></script>
+        <script type="text/javascript" src="js/action.js"></script>
         
         <link rel='stylesheet' href='css/style.css' />
 
@@ -16,98 +18,98 @@
         <!--*******************
             Banner
         ********************-->
-            <header>
-                
-                <span id='logo'></span>
+            <nav>
+
+                <img src='img/logo.png'>
                 
                 <ul>
                     <li><a href='https://fb.com/woodwolfarchery' target='_blank'><img src='img/face.png'/></a></li>
                     <li><a href='https://instagram.com/woodwolfarchery' target='_blank'><img src="img/insta.png"/></a></li>
                     <li><a href='https://api.whatsapp.com/send?phone=5521979907874&text=Ol%C3%A1%20estou%20interessado%20nos%20arcos%2C%20pode%20me%20contar%20mais%3F' target='_blank'><img src="img/wpp.png"/></a></li>
                 </ul>
-                
-                <div id='caixa-texto'>
-                    
-                    <h1>Mega Promo</h1>
-                    
-                    <p>Tenha seu arco  mais 4 flechas
-                        e  ajava com até 50% de desconto!</p>
-                    
-                    <button>Eu Quero!</button>    
 
+            </nav>
+        <section id='container'>
+            <header>
+                <div id='texto'>
+                    <h1>APROVEITE OS MELHORES DESCONTOS DA BLACK FRIDAY <p>até 70%</p></h1>
                 </div>
-                    <h3 id='slogan'>Vários modelos de arcos à sua espera!</h3>
             </header>
             
             <section id='center'>
-
-                <section id='carrossel'>
-
-                    <h1>Itens Mais Vendidos</h1>
-                    
-                    <section>
-                        
-                        <ul>
-                            <div id='bt-prev'> </div>
-
-                            <li>
-                                <div id='li-item-img'>
-                                    <img src='img/IMG-20180819-WA0019.jpg'/>
-                                </div>
-                                <h3>Super Kit, Arco de PVC Mongol + Arco de Madeira + Flechas + Aljava </h3>
-                                <span>15%</span><b> de desconto </b>
-                            </li>
-
-                            <li>
-                                <div id='li-item-img'>
-                                    <img src='img/IMG-20180819-WA0046.jpg'/>
-                                </div>
-                                <h3>Super Kit, Arco de Madeira + Flechas + Aljava </h3>
-                                <span>25%</span><b> de desconto </b>
-                            </li>
-                            <li>
-                                <div id='li-item-img'>
-                                    <img src='img/IMG-20180819-WA0047.jpg'/>
-                                </div>
-                                <h3>Super Kit, Arco de PVC Mongol + Flechas + Aljava </h3>
-                                <span>35%</span><b> de desconto </b>
-                            </li>
+                <h1>Nossos Produtos Mais Vendidos</h1>
+                
+                <ul>
+                    <li>
+                        <div class='li_item'>
+                            <a href='#' ><img src='img/IMG-20171123-WA0022.jpg'/></a>
+                        </div>
+                        <div class='li_item_sombra'>
+                            <h3>43%</h3>
+                        </div>
+                    </li>
+                
+                    <li>
+                        <div class='li_item'>
+                            <a href='#' ><img src='img/IMG-20171123-WA0024.jpg'/></a>
+                        </div>
+                        <div class='li_item_sombra'>
                             
-                            <div id='bt-prox'> </div>
-                        </ul>
+                            <h3>47%</h3>
+                        </div>
+                    </li>
 
-                    </section>
+                    <li>
+                        <div class='li_item'>
+                            <a href='#' ><img src='img/IMG-20180819-WA0010.jpg'/></a>
+                        </div>
+                        <div class='li_item_sombra'>
+                            <h3>40%</h3>
 
-                </section>
-                
-                <section id='youtube'>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/WDJKuRsV2fY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                
-                    <div>
-                        <h2>Tá com dúvida de qual o melhor arco pra você?</h2>
+                        </div>
+                    </li>
 
-                        <p>
-                            Aqui vão algumas dicas pra você.
-                            <ol>
-                                <li>
-                                    Entenda que o arco atira a flecha pela quantidade de energia potencial que ele é capaz de armazenar.
-                                </li>
-                                <li>
-                                    Quanto mais recurvado o arco for, provavelmente ele armazenará mais energia potencial, o que gera mais energia sinética no momento do disparo, gerando mais velocidade de voo da flecha.
-                                </li>
-                                <li>
-                                    Porém, se ele gera mais energia potencial, logo, mesmo tendo a mesma libragem de outros modelos de arco, será mais complicado manter a ancoragem (manter a corda puxada antes de realizar o disparo)!
-                                </li>
-                            </ol>
-                        </p>
-                    </div>
-                </section>
+                    <li>
+                        <div class='li_item'>
+                            <a href='#' ><img src='img/IMG-20180819-WA0019.jpg'/></a>
+                        </div>
+                        <div class='li_item_sombra'>
+                            
+                            <h3>45%</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div class='li_item'>
+                            <a href='#' ><img src='img/IMG-20180819-WA0046.jpg'/></a>
+                        </div>
+                        <div class='li_item_sombra'>
+                            
+                            <h3>54%</h3>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class='li_item'>
+                            <a href='#' ><img src='img/IMG-20180819-WA0047.jpg'/></a>
+                        </div>
+                        <div class='li_item_sombra'>
+                            <h3>65%</h3>
+
+                        </div>
+                    </li>
+
+                </ul>
 
             </section>
-            
             <footer>
-
+                <h2>Fique Por Dentro das Novidades!</h2>
+                <h5>Receba primeiro nossas promoções</h5>
+               <span> 
+                    <input type='text' name='email' placeholder="Exemplo@exemplo.com.br">
+                    <input type='submit' value="Enviar">
+                </span>
             </footer>
+        </section>
     </body>
 
 </html>
