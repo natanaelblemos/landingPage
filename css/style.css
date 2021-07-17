@@ -14,7 +14,7 @@ body{
     background-color:#333;
     overflow-x: hidden;
     min-height: 1200px;
-    width: 100vw;
+    width: 100%;
     z-index: -1;
 }
 nav{
@@ -31,22 +31,27 @@ nav img{
 nav ul{
     float: right;
     height: 50px;
-    margin-right: 30px;
+    margin-right: 300px;
     margin-top: 5px;
     list-style-type: none;
     display: flex;
     justify-content: space-around;
     align-items: center;
     align-content: center;
+    width: 200px;
 }
 nav ul li{
     width: 30px;
     height: 30px;
     margin: 10px;
 }
+nav ul li:hover{
+    transform:scale(1.2);
+    transition-duration: 0.2;
+}
 nav ul li img{
-    width: 30px;
-    height: 30px;
+    width: 100%;
+    height: 100%;
 }
 header{
     width: 100%;
@@ -68,12 +73,15 @@ header{
 }
 #texto h1{
     margin:50px;
+    animation-name: mudaCor;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 #texto p{
     font-size: 80px;
 }
 #center{
-    width: 100vw;
+    width: 100%;
     min-height: 500px;
     background-color: #FFF;
 }
@@ -87,7 +95,7 @@ header{
     line-height: 2;
 }
 #center ul{
-    width: 100vw;
+    width: 100%;
     min-height: 400px;
     background-color: #FFF;
     list-style-type: none;
@@ -122,7 +130,11 @@ header{
     align-items: center;
     align-content: center;
 }
-
+.li_item_sombra:hover{
+    animation: fade 0.5s;
+    animation-fill-mode:forwards;
+    cursor:pointer;
+}
 #center ul li div h3{
     color: #CEA500;
     font-size: 70px;
@@ -194,4 +206,21 @@ footer input:focus{
     #texto p{
         font-size: 50px;
     }
+}
+@keyframes fade {
+    from{
+        opacity: 1;
+        transform: scale(1);
+    }to{
+        opacity: 0;
+        transform: scale(0.8);
+    }
+}
+@keyframes mudaCor {
+    0%   {color:#FFCC00}
+    20%  {color:#be8eeb}
+    40%  {color:rgb(74, 74, 255)}
+    60%  {color:rgb(112, 163, 112)}
+    80%  {color:rgb(255, 255, 255)}
+    100% {color:#FFCC00}
 }

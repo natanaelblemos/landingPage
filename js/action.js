@@ -1,12 +1,15 @@
-$(document).ready(function(){
-    $('section ul li').mouseover(function(){
-        $(this).children('.li_item_sombra').stop().animate({
-            width: '0px',
-        },500);
-    });
-    $('section ul li').mouseout(function(){
-        $(this).children('.li_item_sombra').stop().animate({
-            width: '280px',
-        },500);
-    });
-});
+
+function pegaEmail(){
+    let inputEmail = document.querySelector('#email');
+        let contato = inputEmail.value;
+        //console.log(contato);
+        return contato;
+}
+
+function gravaEmail(contato){
+    localStorage.setItem('contato',JSON.stringify(contato));
+
+    let contatos =JSON.parse(localStorage.getItem('contato'));
+         console.log(contatos)
+     
+}
